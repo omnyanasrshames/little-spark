@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Amatic+SC:wght@700&display=swap');
+
+:root {
+  --pink: #F8C8DC;
+  --mint: #A4DECB;
+  --yellow: #FFF5BA;
+  --cream: #FFF8F2;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--cream);
+  text-align: center;
+}
+
+.navbar {
+  background-color: var(--pink);
+  padding: 15px;
+}
+
+.navbar h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 36px;
+}
+
+.hero {
+  padding: 40px 20px;
+}
+
+.hero h2 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+}
+
+.cta {
+  display: inline-block;
+  background-color: var(--mint);
+  padding: 15px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  margin-top: 20px;
+}
