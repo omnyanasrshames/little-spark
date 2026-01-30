@@ -43,3 +43,19 @@ body {
   font-weight: 600;
   margin-top: 20px;
 }
+.star {
+  position: fixed;
+  top: -10px;
+  background: #FFF5BA; /* لون أصفر فاتح يشبه sparkle */
+  border-radius: 50%;
+  opacity: 0.8;
+  pointer-events: none; /* النجوم مش بتعطل أي حاجة */
+  z-index: 9999;
+  animation: fall linear;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh); /* تتحرك من فوق لتحت */
+  }
+}
