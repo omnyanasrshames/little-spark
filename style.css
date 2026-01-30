@@ -46,16 +46,24 @@ body {
 .star {
   position: fixed;
   top: -10px;
-  background: #FFF5BA; /* لون أصفر فاتح يشبه sparkle */
   border-radius: 50%;
   opacity: 0.8;
-  pointer-events: none; /* النجوم مش بتعطل أي حاجة */
+  pointer-events: none;
   z-index: 9999;
   animation: fall linear;
 }
 
 @keyframes fall {
-  to {
-    transform: translateY(100vh); /* تتحرك من فوق لتحت */
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(50vh) rotate(180deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
   }
 }
